@@ -1,17 +1,8 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h> 
 #include <stdlib.h> 
 
 
 int numero_escolhido;
-int votacao;
 int num_1 = 0;
 int num_2 = 0;
 int num_3 = 0;
@@ -21,8 +12,6 @@ int num_6 = 0;
 int main(int argc,char *argv[])
 {
   do { 
-      votacao=0;
-      
       
       printf("Qual o melhor sistema operacional para uso em servidores?\n");
         printf("-------------------------------------------------------\n");
@@ -32,7 +21,7 @@ int main(int argc,char *argv[])
         printf("4 - Netware\n");
         printf("5 - Mac OS\n");
          printf("6 - Outro\n\n");
-    
+        printf(" Para ver os resultados digite 0\n");
         scanf("%d" , &numero_escolhido);
          if(numero_escolhido > 6)  
          {
@@ -48,41 +37,30 @@ int main(int argc,char *argv[])
          switch (numero_escolhido)
                        {
                            case 1:
-                           printf("voto computado\n\n");
-                              num_1=num_1 + 1;
-                            printf("iniciar nova votação?\n");
-                               printf("1: sim\n");
-                               printf("2: nao\n");
-                            scanf("%d", &votacao);
-                            if(votacao = 2) {
-                                numero_escolhido=0;
-                                break;
-                            };
-                            if (votacao=1){
-                                break;
-                            };
-
-                          case  2:
-                          printf("voto computado\n\n");
-                              num_2=num_2 + 1;
+                                printf("\nvoto computado\n\n");
+                                 num_1=num_1 + 1;
+                                 break;
+                            case  2:
+                                 printf("\nvoto computado\n\n");
+                                    num_2=num_2 + 1;
                                      break;
                           
                            case  3: 
-                            printf("voto computado\n\n");
+                            printf("\nvoto computado\n\n");
                               num_3=num_3 + 1;
                                      break;
                           
                            case  4:
-                           printf("voto computado\n\n");
+                           printf("\nvoto computado\n\n");
                               num_4=num_4 + 1;
                                      break;
                            
                            case  5:
-                            printf("voto computado\n\n");
+                            printf("\nvoto computado\n\n");
                               num_5=num_5 + 1;
                                      break;
                            case  6:
-                            printf("voto computado\n\n");
+                            printf("\n computado\n\n");
                               num_6=num_6 + 1;
                               break;
                         
